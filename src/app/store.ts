@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import realtimeWeatherReducer from "../features/realtime-weather/realtimeWeatherSlice";
+import getGeoLocationReducer from "../features/geolocation/geoLocationSlice";
 
 export const store = configureStore({
   reducer: {
     weatherData: realtimeWeatherReducer,
+    geoLocation: getGeoLocationReducer,
   },
 });
 
