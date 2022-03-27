@@ -1,9 +1,9 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import realtimeWeatherReducer from "../features/realtime-weather/realtimeWeatherSlice";
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    weatherData: realtimeWeatherReducer,
   },
 });
 
